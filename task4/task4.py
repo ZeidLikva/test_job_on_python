@@ -26,8 +26,8 @@ def main(argv):
     if len(argv) == 2:
         str1 = argv[0]
         str2 = argv[1]
-        print(compare_str(str1, str2))
+        print(f'{compare_str(str1, str2)}\n')
     else:
-        print("Неверный ввод. Используйте ввод типа\npython task4.py str1 str2\nгде\nstr1 - первая строка\nstr2 - вторая строка")
+        print("Неверный ввод. Используйте ввод типа\npython task4.py str1 str2\nгде\nstr1 - первая строка\nstr2 - вторая строка\n")
 
 main(sys.argv[1:])

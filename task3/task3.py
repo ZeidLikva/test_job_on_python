@@ -75,10 +75,10 @@ def main(argv):
         barrel = Barrel(log, time1, time2)
         statistic = check_log(barrel.log, barrel.start_value, barrel.time1, barrel.time2)
         if statistic == "Выбранный период не найден в файле":
-            print(statistic)
+            print(f'{statistic}\n')
             return
         write_to_csv(statistic)
     else:
-        print("Неверный ввод. Используйте ввод типа\npython task3.py ./log.log 2020-01-01T12:30:00 2020-01-01T13:00:00\nгде\n./log.log - путь к файлу лога\n2020-01-01T12:30:00 - начальная точка временного интервала\n2020-01-01T13:00:00 - его конечная точка")
+        print("Неверный ввод. Используйте ввод типа\npython task3.py ./log.log 2020-01-01T12:30:00 2020-01-01T13:00:00\nгде\n./log.log - путь к файлу лога\n2020-01-01T12:30:00 - начальная точка временного интервала\n2020-01-01T13:00:00 - его конечная точка\n")
 
 main(sys.argv[1:])
